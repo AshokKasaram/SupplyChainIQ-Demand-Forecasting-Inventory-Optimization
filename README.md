@@ -60,6 +60,52 @@ For each part, we compute:
 
 ---
 
+## 📐 Inventory Logic – Math & Formulas
+
+For each part, the following inventory metrics were computed:
+
+---
+
+### 🧮 Safety Stock  
+```math
+SS = Z × σ_d × √L
+```
+Where:
+- `Z = 1.65` (for 95% service level)
+- `σ_d`: Standard deviation of daily demand
+- `L`: Lead time in days
+
+---
+
+### 📦 Reorder Point (ROP)  
+```math
+ROP = D × L + SS
+```
+Where:
+- `D`: Average daily demand  
+- `L`: Lead time  
+- `SS`: Safety stock  
+
+---
+
+### ⏳ Runout Days  
+```math
+Runout = Current_Stock / Daily_Demand
+```
+
+---
+
+### 📊 Stock Status Classification
+
+| Status        | Condition |
+|---------------|-----------|
+| `Understocked` | if `Current_Stock < Reorder_Point` |
+| `Overstocked` | if `Current_Stock > 1.5 × Reorder_Point` |
+| `OK`          | otherwise |
+
+---
+
+
 ## Demand Forecasting (Python)
 
 We use **Simple Exponential Smoothing (SES)** to forecast future demand:
