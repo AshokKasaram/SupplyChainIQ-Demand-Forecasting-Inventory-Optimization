@@ -7,7 +7,7 @@ A complete end-to-end project that simulates supply chain inventory and demand d
 ## Dashboard Preview
 
 ### Inventory Health Overview
-![Inventory Overview](<insert path or use GitHub image URL>)
+![Inventory Overview](<https://github.com/AshokKasaram/SupplyChainIQ-Demand-Forecasting-Inventory-Optimization/blob/main/SupplyChainIQ/Images/Page1.JPG>)
 
 ### Demand Trends & Forecast Overview
 ![Demand Forecast Overview](<insert path or use GitHub image URL>)
