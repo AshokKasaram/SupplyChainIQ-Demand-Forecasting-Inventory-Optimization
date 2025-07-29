@@ -4,17 +4,17 @@ A complete end-to-end project that simulates supply chain inventory and demand d
 
 ---
 
-## 📊 Dashboard Preview
+## Dashboard Preview
 
-### 📌 Inventory Health Overview
+### Inventory Health Overview
 ![Inventory Overview](<insert path or use GitHub image URL>)
 
-### 📌 Demand Trends & Forecast Overview
+### Demand Trends & Forecast Overview
 ![Demand Forecast Overview](<insert path or use GitHub image URL>)
 
 ---
 
-## 🛠 Project Overview
+## Project Overview
 
 This project simulates and analyzes real-world inventory behavior using Python and visualizes inventory performance with Power BI. We focus on:
 
@@ -26,7 +26,7 @@ This project simulates and analyzes real-world inventory behavior using Python a
 
 ---
 
-## 🧮 Inventory Logic – Math & Formulas
+## Inventory Logic – Math & Formulas
 
 For each part, we compute:
 
@@ -60,7 +60,7 @@ For each part, we compute:
 
 ---
 
-## 🧪 Demand Forecasting (Python)
+## Demand Forecasting (Python)
 
 We use **Simple Exponential Smoothing (SES)** to forecast future demand:
 
@@ -75,7 +75,7 @@ This allows us to generate 15-day forecasts per part and compare them with actua
 
 ---
 
-## 🐍 Python Implementation (Key Steps)
+## Python Implementation (Key Steps)
 
 ### 1. Dataset Creation
 ```python
@@ -107,24 +107,24 @@ discrepancies = df_parts[df_parts["Expected_Status"] != df_parts["Stock_Status"]
 
 ---
 
-## 📈 Power BI Dashboard (Screenshots)
+## Power BI Dashboard (Screenshots)
 
-### ✅ Page 1: Inventory Health Overview
-- 💰 Total Inventory Value
-- ⏳ Average Runout Days
-- 📉 Understocked % by Location
-- 📦 Current Stock by Part
-- 📌 Stock Status Donut Chart
+### Page 1: Inventory Health Overview
+- Total Inventory Value
+- Average Runout Days
+- Understocked % by Location
+- Current Stock by Part
+- Stock Status Donut Chart
 
-### 📉 Page 2: Demand Trends & Forecasting
-- 📅 Daily Actual vs Forecast Demand Line Chart
-- ⚙️ Demand by Part (Top Contributors)
-- 📉 Forecast Deviation by Part
-- 📉 Demand Trend & Run Rate by Location
+### Page 2: Demand Trends & Forecasting
+- Daily Actual vs Forecast Demand Line Chart
+- Demand by Part (Top Contributors)
+- Forecast Deviation by Part
+- Demand Trend & Run Rate by Location
 
 ---
 
-## 📍 Key Insights
+## Key Insights
 
 - **% Understocked**:
   - California: 0.63  
@@ -143,7 +143,7 @@ discrepancies = df_parts[df_parts["Expected_Status"] != df_parts["Stock_Status"]
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 ├── data/
@@ -160,7 +160,7 @@ discrepancies = df_parts[df_parts["Expected_Status"] != df_parts["Stock_Status"]
 
 ---
 
-## 📌 Tools Used
+## Tools Used
 
 - **Python**: Pandas, NumPy, statsmodels
 - **Power BI**: DAX, custom visuals, filters
@@ -169,7 +169,7 @@ discrepancies = df_parts[df_parts["Expected_Status"] != df_parts["Stock_Status"]
 
 ---
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 - Integrate Prophet/ARIMA models
 - Add inventory cost optimization logic
