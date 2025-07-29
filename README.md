@@ -10,7 +10,7 @@ A complete end-to-end project that simulates supply chain inventory and demand d
 ![Inventory Overview](<https://github.com/AshokKasaram/SupplyChainIQ-Demand-Forecasting-Inventory-Optimization/blob/main/SupplyChainIQ/Images/Page1.JPG>)
 
 ### Demand Trends & Forecast Overview
-![Demand Forecast Overview](<insert path or use GitHub image URL>)
+![Demand Forecast Overview](<https://github.com/AshokKasaram/SupplyChainIQ-Demand-Forecasting-Inventory-Optimization/blob/main/SupplyChainIQ/Images/Page2.JPG>)
 
 ---
 
