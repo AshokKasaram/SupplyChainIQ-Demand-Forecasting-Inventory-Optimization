@@ -1,4 +1,4 @@
-# 📦 Supply Chain Demand Forecasting & Inventory Optimization
+# SupplyChainIQ-Demand Forecasting & Inventory Optimization
 
 A complete end-to-end project that simulates supply chain inventory and demand data, applies inventory health logic, forecasts future demand using time series models, and presents actionable insights via interactive **Power BI dashboards**.
 
@@ -26,47 +26,13 @@ This project simulates and analyzes real-world inventory behavior using Python a
 
 ---
 
-## Inventory Logic – Math & Formulas
-
-For each part, we compute:
-
-- **Safety Stock**  
-  \[
-  SS = Z \times \sigma_d \times \sqrt{L}
-  \]  
-  Where:  
-  - \( Z = 1.65 \) (for 95% service level)  
-  - \( \sigma_d \): Std Dev of demand  
-  - \( L \): Lead Time in days
-
-- **Reorder Point (ROP)**  
-  \[
-  ROP = D \times L + SS
-  \]  
-  Where:  
-  - \( D \): Daily average demand  
-  - \( L \): Lead time  
-  - \( SS \): Safety stock
-
-- **Runout Days**  
-  \[
-  Runout = \frac{Current\_Stock}{Daily\_Demand}
-  \]
-
-- **Stock Status**
-  - `Understocked` if `Current_Stock < Reorder_Point`
-  - `Overstocked` if `Current_Stock > 1.5 * Reorder_Point`
-  - `OK` otherwise
-
----
-
-## 📐 Inventory Logic – Math & Formulas
+##  Inventory Logic – Math & Formulas
 
 For each part, the following inventory metrics were computed:
 
 ---
 
-### 🧮 Safety Stock  
+### Safety Stock  
 ```math
 SS = Z × σ_d × √L
 ```
@@ -77,7 +43,7 @@ Where:
 
 ---
 
-### 📦 Reorder Point (ROP)  
+### Reorder Point (ROP)  
 ```math
 ROP = D × L + SS
 ```
@@ -88,14 +54,14 @@ Where:
 
 ---
 
-### ⏳ Runout Days  
+### Runout Days  
 ```math
 Runout = Current_Stock / Daily_Demand
 ```
 
 ---
 
-### 📊 Stock Status Classification
+### Stock Status Classification
 
 | Status        | Condition |
 |---------------|-----------|
